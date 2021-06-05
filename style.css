@@ -1,0 +1,10 @@
+body {
+    background-color: aqua;
+}
+
+
+label, input {
+    display:inline-block;
+    padding: 10px;
+    margin-top: 5px;
+}
