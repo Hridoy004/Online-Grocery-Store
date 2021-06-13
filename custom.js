@@ -1,4 +1,4 @@
-alert("Hi!");
+//alert("Hi!");
 
 let btnOpen = document.querySelector('label');
 let input = document.querySelector('input');
