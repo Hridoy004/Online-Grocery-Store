@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
 :root{
-  --green:#0ff06d;
+  --green:#27ae60;
   --black:#2c2c54;
 }
-* {
+
+*{
   font-family: 'Nunito', sans-serif;
   margin:0; padding:0;
   box-sizing: border-box;
@@ -15,7 +17,7 @@
 
 *::selection{
   background:var(--green);
-  color:rgb(233, 238, 229);
+  color:#fff;
 }
 
 html{
@@ -27,6 +29,21 @@ html{
 
 section{
   padding:2rem 9%;
+}
+
+.btn{
+  display: inline-block;
+  margin-top: 1rem;
+  background:var(--green);
+  color:#fff;
+  padding:.8rem 3rem;
+  font-size: 1.7rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn:hover{
+  background:var(--black);
 }
 
 .heading{
@@ -62,12 +79,12 @@ section{
   color:var(--green);
 }
 
-.header-1 .search-box-container{
+.header-1 .search{
   display: flex;
   height:5rem;
 }
 
-.header-1 .search-box-container #search-box{
+.header-1 .search #search-box{
   height: 100%;
   width:100%;
   padding:1rem;
@@ -77,7 +94,7 @@ section{
   text-transform: none;
 }
 
-.header-1 .search-box-container label{
+.header-1 .search label{
   height: 100%;
   width:8rem;
   font-size: 2.5rem;
@@ -88,7 +105,7 @@ section{
   cursor: pointer;
 }
 
-.header-1 .search-box-container label:hover{
+.header-1 .search label:hover{
   background:var(--black);
 }
 
@@ -117,7 +134,7 @@ section{
 
 .header-2 .navbar a:hover{
   background:var(--green);
-  color:#ce2d2d;
+  color:#fff;
 }
 
 .header-2 .icons a{
@@ -162,10 +179,49 @@ section{
 
 .home .content span{
   font-size: 3rem;
-  color:rgb(184, 38, 38);
+  color:#666;
 }
 
 .home .content h3{
   font-size: 5rem;
   color:var(--black);
+}
+
+.banner-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap:1.5rem;
+}
+
+.banner-container .banner{
+  flex:1 1 40rem;
+  height: 25rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.banner-container .banner img{
+  height: 100%;
+  width:100%;
+  object-fit: cover;
+}
+
+.banner-container .banner .content{
+  position: absolute;
+  top:50%; left: 4%;
+  transform: translateY(-50%);
+}
+
+.banner-container .banner .content h3{
+  font-size: 3rem;
+  color:var(--black);
+}
+
+.banner-container .banner .content p{
+  font-size: 2rem;
+  color:#333;
+}
+
+.banner-container .banner:hover img{
+  transform:scale(1.2) rotate(-5deg);
 }

@@ -4,61 +4,88 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grocery</title>
+    <title>Grocey store</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href="style.css" type="text/css" rel="stylesheet">
 </head>
 <body>
-
+    
     <header>
 
         <div class="header-1">
-    
-            <a href="#" class="logo"><i class="fas fa-shopping-basket"></i>groco</a>
-    
-            <form action="" class="search-box-container">
+
+            <a href="#" class="logo"><i class="fas fa-shopping-basket"></i>Groco</a>
+
+            <form action="" class="search">
                 <input type="search" id="search-box" placeholder="search here...">
                 <label for="search-box" class="fas fa-search"></label>
             </form>
-    
-        </div>
-    
-        <div class="header-2">
-    
-            <div id="menu-bar" class="fas fa-bars"></div>
-    
-            <nav class="navbar">
-                <a href="#home">home</a>
-                <a href="#category">category</a>
-                <a href="#product">product</a>
-                <a href="#deal">deal</a>
-                <a href="#contact">contact</a>
-            </nav>
-    
-            <div class="icons">
-                <a href="#" class="fas fa-shopping-cart"></a>
-                
-                <a href="#" class="fas fa-user-circle"></a>
-            </div>
-    
-        </div>
-    
-    </header>
 
+        </div>
+
+        <div class="header-2">
+
+            <div id="menu-bar" class="fas fa-bars"></div>
+
+            <nav class="navbar">
+                <a href="#">Home</a>
+                <a href="#">Category</a>
+                <a href="#">Product</a>
+                <a href="#">Deal</a>
+                <a href="#">Contact</a>
+            </nav>
+
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>  
+                <a href="registration.html" class="fas fa-user-circle"></a>
+            </div>
+
+        </div>
+
+    </header>
+    
     <section class="home" id="home">
 
-        <div class="image">
-            <img src="begin.jpg">
+        <div>
+            <img src="images/home_img.jpg" alt="Sorry image isn't found" height="800" width="900">
         </div>
-    
+
         <div class="content">
             <span>fresh and organic</span>
             <h3>your daily need products</h3>
-            
+            <a href="#" class="bnt">Get started</a>
         </div>
-    
+
     </section>
-    
+
+    <section class="banner-container">
+
+        <div class="banner">
+
+            <img src="images/banner-1.jpg" alt="Sorry image isn't found">
+            
+            <div class="content"> 
+                <h3>special offer</h3>
+                <p>upto 40% off</p>
+                <a href="#" class="btn">check out</a>
+            </div>
+
+        </div>
+
+        <div class="banner">
+
+            <img src="images/banner-2.jpg" alt="Sorry image isn't found">
+
+            <div class="content">
+                <h3>special offer</h3>
+                <p>upto 60% off</p>
+                <a href="#" class="btn">check out</a>
+            </div>
+
+        </div>
+
+    </section>
+
 
     <script type="text/javascript" src="custom.js"></script>
 </body>
