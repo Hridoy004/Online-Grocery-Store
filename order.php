@@ -32,12 +32,18 @@
             transition: all .2s linear;
         }
 
+        *::selection{
+            background:var(--green);
+            color:#fff;
+        }
+
         html{
             font-size: 68.5%;
             overflow-x: hidden;
             scroll-padding-top: 5.5rem;
             scroll-behavior: smooth;
         }
+
         .heading{
             text-align: center;
             color:var(--black);
@@ -198,8 +204,6 @@
         $date = $_POST['date'];
         $address = $_POST['address'];
         $message = $_POST['message'];
-
-
 
         $insertion = "insert into orderTable(name, number, product, additional_item, how_much, date_time, address, message) values('$name', '$number', '$itemName', '$exItem', '$howMuch', '$date', '$address', '$message') ";
         $run = mysqli_query($con, $insertion);
